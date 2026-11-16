@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #094067 !important;">
+            <div class="container">
+
+                <div class="navsection"><a class="navbar-brand" href="#"><img src="assests/logo2.jpg" alt="Logo"
+                            width="60px" /></a>
+                    <h2 class="titlecontent">EmployeeHUb</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Leave management.html">Leave management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Mytask.html">Mytask</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Team.html">Team</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <main class="col-md-11 mx-auto main-content">
+
+                <div class="row">
+                    <col class="md-12 topbar">
+                    <div class="leave-topbar">
+                        <div>
+                            <h2>Leave Management portal</h2>
+                            <p>Apply for leave and track your requests</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="row g-3 my-3">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card leave-card">
+                            <div class="card-body">
+                                <ion-icon name="calendar-number-outline"></ion-icon>
+                                <p>Available Leaves</p>
+                                <h3>12</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card leave-card">
+                            <div class="card-body">
+                                <ion-icon name="time-outline"></ion-icon>
+                                <p>Pending Requests</p>
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card leave-card">
+                            <div class="card-body">
+                                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                <p>Approved Leaves</p>
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card leave-card">
+                            <div class="card-body">
+                                <ion-icon name="close-circle-outline"></ion-icon>
+                                <p>Rejected Requests</p>
+                                <h3>0</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row g-4">
+
+
+                    <div class="col-12 col-lg-12">
+                        <section class="leave-panel">
+                            <h4>Apply for Leave</h4>
+
+                            <form id="leaveForm">
+
+                                <label for="leaveType">Leave Type</label>
+                                <select id="leaveType" class="form-select" required>
+                                    <option value="">Select leave type</option>
+                                    <option>Casual Leave</option>
+                                    <option>Sick Leave</option>
+                                    <option>Earned Leave</option>
+                                    <option>Personal Leave</option>
+                                </select>
+
+                                <div class="row g-3 mt-1">
+                                    <div class="col-12 col-sm-6">
+                                        <label for="fromDate">From Date</label>
+                                        <input type="date" id="fromDate" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <label for="toDate">To Date</label>
+                                        <input type="date" id="toDate" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <label for="reason" class="mt-3">Reason</label>
+                                <textarea id="reason" class="form-control" rows="3" placeholder="Enter your reason"
+                                    required></textarea>
+
+                                <button type="submit" class="btn btn-primary mt-3 w-100">
+                                    Apply Leave
+                                </button>
+
+                                <p id="leaveMessage" class="mt-3 mb-0"></p>
+                            </form>
+                        </section>
+                    </div>
+
+
+                    <div class="col-12 col-lg-12">
+                        <section class="leave-panel">
+                            <h4>Leave History</h4>
+
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>Leave Type</th>
+                                            <th>From</th>
+                                            <th>To</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="leaveTable">
+                                        <tr>
+                                            <td>Casual Leave</td>
+                                            <td>20 Oct</td>
+                                            <td>21 Oct</td>
+                                            <td><span class="leave-status approved">Approved</span></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Sick Leave</td>
+                                            <td>28 Oct</td>
+                                            <td>28 Oct</td>
+                                            <td><span class="leave-status pending">Pending</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footerbox">
+
+            <div class="listitem">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                    <li><a href="#"> info</a></li>
+
+                </ul>
+                <div class="iconitems">
+                    <ul>
+                        <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon></li>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <p>All rights are reserved to pavi@gmail.com</p>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

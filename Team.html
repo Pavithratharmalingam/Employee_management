@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #094067 !important;">
+            <div class="container">
+
+                <div class="navsection"><a class="navbar-brand" href="#"><img src="assests/logo2.jpg" alt="Logo"
+                            width="60px" /></a>
+                    <h2 class="titlecontent">EmployeeHUb</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Leave management.html">Leave management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Mytask.html">Mytask</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Team.html">Team</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+
+
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="bi bi-people-fill"></i>
+                <span>Employee<br>Management</span>
+            </div>
+
+            <nav class="side-menu">
+                <a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                <a href="#"><i class="bi bi-box-arrow-right"></i> Logout</a>
+            </nav>
+        </aside>
+
+
+        <main class="main-area">
+
+
+            <header class="topbar">
+
+                <button class="menu-toggle" id="menuToggle" type="button">
+                    <i class="bi bi-list"></i>
+                </button>
+
+
+                <div class="profile">
+                    <i class="bi bi-person-circle"></i>
+                    <span>Hello, Pavithra</span>
+                </div>
+            </header>
+
+
+            <section class="content">
+
+                <div class="page-heading">
+                    <div>
+                        <h1>Our Team</h1>
+                        <p>Meet our amazing team members</p>
+                    </div>
+
+                    <div class="search-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="searchInput" placeholder="Search team member...">
+                    </div>
+                </div>
+
+
+                <div class="summary-grid">
+
+                    <div class="summary-card">
+                        <div class="summary-icon blue">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div>
+                            <h2 id="totalMembers">5</h2>
+                            <p>Total Members</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon green">
+                            <i class="bi bi-person-fill"></i>
+                        </div>
+                        <div>
+                            <h2>3</h2>
+                            <p>Developers</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon purple">
+                            <i class="bi bi-palette-fill"></i>
+                        </div>
+                        <div>
+                            <h2>1</h2>
+                            <p>Designer</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon orange">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+                        <div>
+                            <h2>1</h2>
+                            <p>Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="team-grid" id="teamGrid">
+
+
+                    <div class="team-card" data-name="Pavithra Tharmalingam" data-role="Developer">
+                        <img src="assests/profile1.jpg" alt="Pavithra" class="member-photo">
+
+                        <h3>Pavithra Tharmalingam</h3>
+                        <span class="role developer">Developer</span>
+                        <p>Frontend Developer who loves to build web apps.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:team@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="team-card" data-name="Arun Kumar" data-role="Developer">
+                        <img src="assests/profile4.jpg" alt="Arun Kumar" class="member-photo">
+
+                        <h3>Arun Kumar</h3>
+                        <span class="role developer">Developer</span>
+                        <p>Skilled in React and JavaScript.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:team@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="team-card" data-name="Divya S" data-role="Designer">
+                        <img src="assests/profile2.jpg" alt="Divya" class="member-photo">
+
+                        <h3>Divya S</h3>
+                        <span class="role designer">Designer</span>
+                        <p>Creative Designer with modern UI skills.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:team@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-name="Karthik R" data-role="Manager">
+                        <img src="assests/profile5.jpg" alt="Karthik" class="member-photo">
+
+                        <h3>Karthik R</h3>
+                        <span class="role manager">Manager</span>
+                        <p>Team Lead and Project Manager.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:team@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="team-card" data-name="Sneha M" data-role="Developer">
+                        <img src="assests/profile3.jpg" alt="Sneha" class="member-photo">
+
+                        <h3>Sneha M</h3>
+                        <span class="role developer">Developer</span>
+                        <p>Passionate about web development and coding.</p>
+
+                        <div class="social-links">
+                            <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:team@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p id="noResults" class="no-results" hidden>
+                    No team members found.
+                </p>
+
+            </section>
+        </main>
+    </div>
+    <section class="footer">
+        <div class="footerbox">
+
+            <div class="listitem">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                    <li><a href="#"> info</a></li>
+
+                </ul>
+                <div class="iconitems">
+                    <ul>
+                        <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon></li>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <p>All rights are reserved to pavi@gmail.com</p>
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

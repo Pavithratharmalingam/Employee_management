@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Tasks - Employee Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header class="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #094067 !important;">
+            <div class="container">
+
+                <div class="navsection"><a class="navbar-brand" href="#"><img src="assests/logo2.jpg" alt="Logo"
+                            width="60px" /></a>
+                    <h2 class="titlecontent">EmployeeHUb</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Leave management.html">Leave management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Mytask.html">Mytask</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Team.html">Team</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <aside class="col-md-2 sidebars">
+                <h5 class="logo">Employee Panel</h5>
+
+                <a href="index.html">▦ Dashboard</a>
+                <a href="#">♧ Notifications</a>
+                <a href="#">☏ Communication</a>
+
+                <div class="sidebars-bottom">
+                    <a href="#">⚙ Settings</a>
+                    <a href="#">? Help & Support</a>
+                </div>
+            </aside>
+
+
+            <main class="col-md-10 main-content">
+
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h3>My Tasks</h3>
+                        <p class="text-secondary mb-0">
+                            Manage daily, weekly, and monthly tasks
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row g-3 mb-4">
+
+                    <div class="col-md-4">
+                        <div class="card summary-card">
+
+                            <div class="card-body">
+                                <p>Total Tasks</p>
+                                <h3>9</h3>
+                                <small>Across all periods</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card summary-card">
+                            <div class="card-body">
+                                <p>Completed Tasks</p>
+                                <h3 class="text-success">3</h3>
+                                <small>Tasks completed</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card summary-card">
+                            <div class="card-body">
+                                <p>Overdue Tasks</p>
+                                <h3 class="text-danger">1</h3>
+                                <small>Tasks need attention</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <ul class="nav nav-tabs mb-3" id="taskTabs">
+
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#daily" type="button">
+                            Daily Tasks
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#weekly" type="button">
+                            Weekly Tasks
+                        </button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#monthly" type="button">
+                            Monthly Tasks
+                        </button>
+                    </li>
+
+                </ul>
+
+
+                <div class="tab-content">
+
+
+                    <div class="tab-pane fade show active" id="daily">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered align-middle">
+
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>Task Name</th>
+                                        <th>People</th>
+                                        <th>Priority</th>
+                                        <th>Deadline</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Design Login Page</td>
+                                        <td>Arun</td>
+                                        <td><span class="badge bg-warning-subtle text-warning-emphasis">Medium</span>
+                                        </td>
+                                        <td>24-10-2026</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Fix Website Errors</td>
+                                        <td>Priya</td>
+                                        <td><span class="badge bg-danger">Urgent</span></td>
+                                        <td>24-10-2026</td>
+                                        <td><span class="badge bg-primary">In Progress</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Update Dashboard</td>
+                                        <td>Rahul</td>
+                                        <td><span class="badge bg-secondary">Low</span></td>
+                                        <td>24-10-2026</td>
+                                        <td><span class="badge bg-secondary">Not Started</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="weekly">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered align-middle">
+
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>Task Name</th>
+                                        <th>People</th>
+                                        <th>Priority</th>
+                                        <th>Deadline</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Develop Employee Page</td>
+                                        <td>Arun</td>
+                                        <td><span class="badge bg-danger">Urgent</span></td>
+                                        <td>30-10-2026</td>
+                                        <td><span class="badge bg-primary">In Progress</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Complete Contact Form</td>
+                                        <td>Priya</td>
+                                        <td><span class="badge bg-warning-subtle text-warning-emphasis">Medium</span>
+                                        </td>
+                                        <td>29-10-2026</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Test Responsive Design</td>
+                                        <td>Rahul</td>
+                                        <td><span class="badge bg-secondary">Low</span></td>
+                                        <td>31-10-2026</td>
+                                        <td><span class="badge bg-secondary">Not Started</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="monthly">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered align-middle">
+
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox"></th>
+                                        <th>Task Name</th>
+                                        <th>People</th>
+                                        <th>Priority</th>
+                                        <th>Deadline</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Complete Employee Website</td>
+                                        <td>Arun</td>
+                                        <td><span class="badge bg-danger">Urgent</span></td>
+                                        <td>15-11-2026</td>
+                                        <td><span class="badge bg-primary">In Progress</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Prepare Documentation</td>
+                                        <td>Priya</td>
+                                        <td><span class="badge bg-warning-subtle text-warning-emphasis">Medium</span>
+                                        </td>
+                                        <td>20-11-2026</td>
+                                        <td><span class="badge bg-secondary">Not Started</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Final Website Testing</td>
+                                        <td>Rahul</td>
+                                        <td><span class="badge bg-secondary">Low</span></td>
+                                        <td>25-11-2026</td>
+                                        <td><span class="badge bg-success">Done</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <small class="text-secondary">Showing task entries</small>
+
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footerbox">
+
+            <div class="listitem">
+                <ul>
+                    <li><a href="#"> Home</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                    <li><a href="#"> info</a></li>
+
+                </ul>
+                <div class="iconitems">
+                    <ul>
+                        <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon></li>
+                        <li><ion-icon name="logo-whatsapp"></ion-icon></li>
+                    </ul>
+                </div>
+            </div>
+            <p>All rights are reserved to pavi@gmail.com</p>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
